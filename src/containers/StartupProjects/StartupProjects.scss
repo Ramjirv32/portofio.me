@@ -1,0 +1,116 @@
+@import "../../_globalColor";
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card-title {
+  color: $titleColor;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin: 20px 0 12px 0;
+  text-align: left;
+}
+.card-subtitle {
+  color: $cardSubtitle;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $lightBackground2;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid $lightBorder1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.project-card-light {
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.project-card-dark {
+  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.25s ease;
+}
+
+.project-detail {
+  text-align: left;
+  width: 100%;
+}
+.project-card-light:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 40px -10px;
+  transform: translateY(-5px);
+}
+.project-card-dark:hover {
+  box-shadow: 0px 20px 40px -10px $darkBoxShadow;
+  transform: translateY(-5px);
+}
+.project-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 20px 0;
+}
+
+.project-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.project-card-footer span.project-tag {
+  background: $buttonColor;
+  color: #ffffff;
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+.project-card-footer span.project-tag:hover {
+  background: $buttonHover;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+}
