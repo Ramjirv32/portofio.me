@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Computer Science Student 🚀 having an experience of building web applications with HTML, CSS, JavaScript, React, Node.js, MySQL and responsive design."
   ),
   resumeLink:
-    "", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1KgX6VOwpoNxOHHtCNLwbqhP9xJzXq685/view?usp=drivesdk", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
